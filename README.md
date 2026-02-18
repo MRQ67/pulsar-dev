@@ -10,18 +10,18 @@ A real-time DevOps dashboard for small development teams. Monitor GitHub activit
 
 ## 📋 Table of Contents
 
-- [Overview](#overview)
-- [Tech Stack](#tech-stack)
-- [Architecture](#architecture)
-- [Features](#features)
-- [Project Structure](#project-structure)
-- [Database Schema](#database-schema)
-- [API Endpoints](#api-endpoints)
-- [WebSocket Events](#websocket-events)
-- [Setup & Installation](#setup--installation)
-- [Development Workflow](#development-workflow)
-- [Deployment](#deployment)
-- [Roadmap](#roadmap)
+- [Overview](#-overview)
+- [Tech Stack](#-tech-stack)
+- [Architecture](#-architecture)
+- [Features](#-features)
+- [Project Structure](#-project-structure)
+- [Database Schema](#-database-schema)
+- [API Endpoints](#-api-endpoints)
+- [WebSocket Events](#-websocket-events)
+- [Setup & Installation](#-setup--installation)
+- [Development Workflow](#-development-workflow)
+- [Deployment](#-deployment)
+- [Roadmap](#-roadmap)
 
 ---
 
