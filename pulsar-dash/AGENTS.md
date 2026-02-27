@@ -3,26 +3,61 @@
 ## Project Overview
 This is a Next.js 16 application with TypeScript, Tailwind CSS 4, and Radix UI components. It uses the App Router architecture.
 
+## Package Manager
+**Always use pnpm instead of npm** for package management.
+
+## Workflow Rules
+
+### Commit Strategy
+- Complete one area of work before starting another
+- Commit after finishing each area, even if multiple areas were requested
+- Do not batch multiple unrelated changes into one commit
+
+### Commit Message Format
+```
+[area]: Summary of the change
+
+Description of what the change is, what problem it solves, and any relevant context.
+```
+
+Example:
+```
+vitest: Add Vitest testing framework
+
+- Install vitest, @testing-library/react, jsdom dependencies
+- Create vitest.config.ts with jsdom environment
+- Add test scripts to package.json
+- Create test/setup.ts for test utilities
+```
+
+Areas: `vitest`, `frontend`, `backend`, `api`, `websocket`, `ui`, `docs`, `deps`, etc.
+
 ## Commands
 
 ### Development
 ```bash
-npm run dev      # Start development server at http://localhost:3000
-npm run build    # Build for production
-npm run start    # Start production server
+pnpm dev      # Start development server at http://localhost:3000
+pnpm build    # Build for production
+pnpm start    # Start production server
 ```
 
 ### Linting
 ```bash
-npm run lint     # Run ESLint on entire project
+pnpm lint     # Run ESLint on entire project
 ```
 
 ### Type Checking
 ```bash
-npx tsc --noEmit # Run TypeScript compiler check (strict mode enabled)
+pnpm typecheck # Run TypeScript compiler check (strict mode enabled)
 ```
 
-> Note: This project does not currently have a test suite configured.
+### Testing
+```bash
+pnpm test        # Run tests in watch mode
+pnpm test:run    # Run tests once
+pnpm test:watch  # Run tests in watch mode
+pnpm test:coverage # Run tests with coverage report
+```
 
 ## Code Style Guidelines
 
