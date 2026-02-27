@@ -1,13 +1,11 @@
 import '@testing-library/dom'
 import { cleanup } from '@testing-library/react'
-import { afterEach } from 'vitest'
+import { afterEach, vi } from 'vitest'
 
 afterEach(() => {
   cleanup()
 })
 
-declare global {
-  namespace Vi {
-    interface Matchers<T> extends jest.Matchers<T> {}
-  }
-}
+vi.mock('@testing-library/jest-dom', () => ({
+  ...vi.importActual('@testing-library/jest-dom'),
+}))
